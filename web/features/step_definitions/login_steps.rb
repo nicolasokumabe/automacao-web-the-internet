@@ -1,5 +1,6 @@
 Dado("que acesso a página Basic Auth") do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit "http://the-internet.herokuapp.com/basic_auth"
+  # sleep 5
 end
 
 Quando("submeto o meu login completo") do
