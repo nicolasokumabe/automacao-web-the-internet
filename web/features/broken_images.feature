@@ -1,7 +1,7 @@
 #language: pt
 
 Funcionalidade: Verificação de imagens quebradas
-    @temp
+    
     Cenario: Verificar imagens quebradas na página web
 
         Dado que acesso a página Broken Images

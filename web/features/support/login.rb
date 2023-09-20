@@ -1,0 +1,2 @@
+EMAIL = ENV["EMAIL"]
+SENHA = ENV["SENHA"]
