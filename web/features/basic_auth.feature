@@ -1,7 +1,7 @@
 #language: pt
 
 Funcionalidade: Login
-    @temp
+
     Cenario: Fazer login
 
         Dado que acesso a página Basic Auth
