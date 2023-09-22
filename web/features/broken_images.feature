@@ -2,8 +2,8 @@
 
 Funcionalidade: Verificação de imagens quebradas
     
-    Cenario: Verificar imagens quebradas na página web
+  Cenario: Verificar imagens quebradas na página web
 
-        Dado que acesso a página Broken Images
-        Quando verifico se há imagens quebradas
-        Então eu não deveria ver imagens quebradas
+    Dado que acesso a página Broken Images
+    Quando verifico se há imagens quebradas
+    Então eu não deveria ver imagens quebradas

@@ -2,8 +2,8 @@
 
 Funcionalidade: Login
 
-    Cenario: Fazer login
+  Cenario: Fazer login
 
-        Dado que acesso a página Basic Auth
-        Quando submeto o meu login completo
-        Então sou redirecionado para o Dashboard
+    Dado que acesso a página Basic Auth
+    Quando submeto o meu login completo
+    Então sou redirecionado para o Dashboard
