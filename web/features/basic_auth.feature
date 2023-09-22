@@ -1,9 +1,8 @@
 #language: pt
 
-Funcionalidade: Login
+Funcionalidade: Basic Auth
 
-  Cenario: Fazer login
-
+  Cenario: Autenticação básica
     Dado que acesso a página Basic Auth
     Quando submeto o meu login completo
     Então sou redirecionado para o Dashboard
