@@ -3,7 +3,7 @@ Dado("que acesso a página Broken Images") do
 end
 
 Quando("verifico se há imagens quebradas") do
-  #Há imagens quebradas, o teste deve falhar.
+  # Há imagens quebradas, o teste deve falhar.
 end
 
 Então("eu não deveria ver imagens quebradas") do
