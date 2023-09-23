@@ -7,6 +7,7 @@ Quando("verifico se há imagens quebradas") do
 end
 
 Então("eu não deveria ver imagens quebradas") do
+  puts "Há imagens quebradas, o teste deve falhar."
   all("img").each do |imagem|
     expect(imagem["naturalWidth"].to_i).to be > 0, "Imagem quebrada encontrada: #{imagem[:src]}"
   end
