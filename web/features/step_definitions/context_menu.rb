@@ -13,4 +13,10 @@ end
 
 E("clico em ok") do
   page.driver.browser.switch_to.alert.accept
+
+  system("xdotool key Escape")
+
+  # system("xdotool key Return")
+  # system("xdotool key Down")
+  # system("xdotool key Return")
 end

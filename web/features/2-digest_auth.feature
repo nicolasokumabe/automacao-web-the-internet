@@ -1,5 +1,5 @@
 #language: pt
-@temp
+
 Funcionalidade: Digest Auth
 
   Cenário: Autenticação Criptografada Cancelada

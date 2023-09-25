@@ -1,32 +1,10 @@
 Dado("que acesso a pagina Basic Auth") do
   visit "http://the-internet.herokuapp.com/basic_auth"
-  # visit "http://#{EMAIL}:#{SENHA}@the-internet.herokuapp.com/basic_auth"
-end
-
-Quando("não submeto o meu login completo") do
-  system("xdotool key Tab")
-  system("xdotool key Tab")
-end
-
-Quando("submeto o meu login completo") do
-  system("xdotool type '#{EMAIL}'")
-  system("xdotool key Tab")
-  system("xdotool type '#{SENHA}'")
-  system("xdotool key Tab")
-end
-
-Quando("clico em cancelar") do
-  system("xdotool key Return")
 end
 
 Então("recebo a mensagem Not authorized") do
   expect(page).to have_css("body", text: "Not authorized")
   # expect(page).to have_xpath('//body[contains(text(), "Not authorized")]')
-end
-
-Quando("clico em login") do
-  system("xdotool key Tab")
-  system("xdotool key Return")
 end
 
 Então("sou redirecionado para o Dashboard") do

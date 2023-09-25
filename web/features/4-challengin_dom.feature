@@ -1,5 +1,5 @@
 #language: pt
-  
+
 Funcionalidade: Validação da Página "Challenging DOM"
   
   Cenário: Verificar título da página
