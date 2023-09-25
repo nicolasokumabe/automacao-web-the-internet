@@ -21,6 +21,15 @@ Dado("que estou na página de Autenticação Digest") do
   @driver.get(url)
 end
 
+Quando("não informo minhas credenciais válidas") do
+  system("xdotool key Tab")
+  system("xdotool key Tab")
+end
+
+Quando("clico no botão cancelar") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
 Quando("informo minhas credenciais válidas") do
   url = "http://#{username}:#{password}@the-internet.herokuapp.com/digest_auth"
   @driver.get(url)

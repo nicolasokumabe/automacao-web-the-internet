@@ -1,5 +1,4 @@
 #language: pt
-
 @temp
 Funcionalidade: Basic Auth
 

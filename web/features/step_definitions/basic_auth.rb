@@ -15,6 +15,15 @@ Quando("submeto o meu login completo") do
   system("xdotool key Tab")
 end
 
+Quando("clico em cancelar") do
+  system("xdotool key Return")
+end
+
+Então("recebo a mensagem Not authorized") do
+  expect(page).to have_css("body", text: "Not authorized")
+  # expect(page).to have_xpath('//body[contains(text(), "Not authorized")]')
+end
+
 Quando("clico em login") do
   system("xdotool key Tab")
   system("xdotool key Return")
