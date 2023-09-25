@@ -3,6 +3,7 @@ require "capybara/cucumber"
 require "selenium-webdriver"
 require "dotenv/load"
 require "digest"
+require "rest-client"
 require_relative "login"
 
 Capybara.configure do |config|

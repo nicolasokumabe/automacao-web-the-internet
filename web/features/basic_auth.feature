@@ -1,5 +1,5 @@
 #language: pt
-@temp
+
 Funcionalidade: Basic Auth
 
   Cenario: Autenticacao basica sem sucesso
