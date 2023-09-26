@@ -1,5 +1,5 @@
 #language: pt
-@t
+
 Funcionalidade: Verificar Conteúdo Dinâmico
 
   Cenário: Verificar se o conteúdo na página é dinâmico
