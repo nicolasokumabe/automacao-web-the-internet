@@ -14,4 +14,9 @@ Funcionalidade: Verificar Conteúdo Dinâmico
     E recarrego a página
     Então devo verificar se todos os campos de texto das imagens são diferentes dos textos anteriores
 
-    # Então devo verificar se o conteúdo da página é diferente do conteúdo anterior
+  Cenário: Verificar mudança no conteúdo após clicar no botão
+    Dado que estou na página de dynamic content
+    E que eu clico no botão "click here"
+    Quando verifico todos os textos de imagens atuais
+    E recarrego a página
+    Então devo verificar se pelo menos um texto de imagem foi modificado

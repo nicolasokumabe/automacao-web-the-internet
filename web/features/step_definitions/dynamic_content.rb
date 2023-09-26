@@ -21,14 +21,12 @@ Então("devo verificar se as imagens na página foram alteradas") do
   @imagens = all(".large-2.columns img")
   imagens_nao_modificadas = 0
 
-  # Itere sobre cada imagem e verifique se o valor do atributo src mudou
   @imagens.each_with_index do |imagem, index|
     if imagem["src"] == @valores_anteriores_src[index]
       imagens_nao_modificadas += 1
     end
   end
 
-  # Verifique se duas ou mais imagens não foram modificadas
   expect(imagens_nao_modificadas).to be <= 1
 end
 
@@ -46,4 +44,18 @@ Então("devo verificar se todos os campos de texto das imagens são diferentes d
   end
 
   expect(textos_atuais).not_to eq(@textos_anteriores)
+end
+
+Dado("que eu clico no botão {string}") do |botao|
+  click_link(botao)
+end
+
+Então("devo verificar se pelo menos um texto de imagem foi modificado") do
+  textos_de_imagem = all(".large-10.columns")
+
+  texto_modificado = textos_de_imagem.any? do |texto|
+    !@textos_anteriores.include?(texto.text)
+  end
+
+  expect(texto_modificado).to be(true)
 end
