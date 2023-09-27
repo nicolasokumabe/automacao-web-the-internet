@@ -15,7 +15,7 @@ Funcionalidade: Controles Dinâmicos
     Então a caixa de seleção não deve ser visível
     E eu clico no botão Add
     E a caixa de seleção deve ser visível
-@t
+
   Cenário: Acionando a caixa de seleção
     Dado que estou na página de Dynamic Controls
     Quando eu clico no botão Remove
