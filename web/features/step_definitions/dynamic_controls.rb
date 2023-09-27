@@ -54,6 +54,15 @@ Então("a caixa de seleção deve ser visível") do
   expect(page).to have_css("p#message", text: "It's back!")
 
   Capybara.default_max_wait_time = 5
-  checkbox = find('input[type="checkbox"]#checkbox')
-  expect(checkbox).to be_visible
+  @checkbox = find('input[type="checkbox"]#checkbox')
+  expect(@checkbox).to be_visible
+end
+
+Então("clico em remove selecionando a caixa") do
+  @checkbox.check
+  click_button "Remove"
+end
+
+Então("vejo a opcao selecionada") do
+  expect(page).to have_content("A checkbox")
 end
