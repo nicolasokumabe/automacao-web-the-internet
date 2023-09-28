@@ -16,7 +16,7 @@ Quando("movo o cursor do mouse para fora da janela do navegador") do
   system("xdotool mousemove 0 0")
 end
 
-Então("deve aparecer deve aparecer o popup") do
+Então("deve aparecer o popup") do
   find("#ouibounce-modal", visible: true)
 
   expect(page).to have_css("#ouibounce-modal", visible: true)
