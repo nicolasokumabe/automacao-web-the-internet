@@ -1,5 +1,5 @@
 #language: pt
-@t
+
 Funcionalidade: Realizar upload de arquivo
 
   Cenário: Fazer upload de um arquivo
