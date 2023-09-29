@@ -1,5 +1,5 @@
 #language: pt
-@t
+
 Funcionalidade: Recuperação de Senha
 
   Cenário: Solicitar recuperação de senha
