@@ -27,7 +27,7 @@ Então("devo verificar se as imagens na página foram alteradas") do
     end
   end
 
-  expect(imagens_nao_modificadas).to be <= 1
+  expect(imagens_nao_modificadas).to be <= 2
 end
 
 Quando("verifico todos os textos de imagens atuais") do

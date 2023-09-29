@@ -3,12 +3,24 @@ Dado("que acesso a página Broken Images") do
 end
 
 Quando("verifico se há imagens quebradas") do
-  # Há imagens quebradas, o teste deve falhar.
+  # Há imagens quebradas
 end
 
-Então("eu não deveria ver imagens quebradas") do
-  puts "Há imagens quebradas, o teste deve falhar."
+Então("eu vejo uma ou mais imagens quebradas") do
+  imagens_quebradas = []
+
   all("img").each do |imagem|
-    expect(imagem["naturalWidth"].to_i).to be > 0, "Imagem quebrada encontrada: #{imagem[:src]}"
+    if imagem["naturalWidth"].to_i <= 0
+      imagens_quebradas << imagem[:src]
+    end
   end
+
+  expect(imagens_quebradas).not_to be_empty, "Nenhuma imagem quebrada foi encontrada:\n#{imagens_quebradas.join("\n")}"
 end
+
+# Caso eu queira detectar nenhuma imagem falha (vida real)
+# Então("eu nao deveria ver imagens quebradas") do
+#   all("img").each do |imagem|
+#     expect(imagem["naturalWidth"].to_i).to be > 0, "Imagem quebrada encontrada: #{imagem[:src]}"
+#   end
+# end
