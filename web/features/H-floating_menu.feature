@@ -1,5 +1,5 @@
 #language: pt
-@t
+
 Funcionalidade: Verificar o menu flutuante
 
   Cenário: Menu flutuante permanece visível ao rolar a página
