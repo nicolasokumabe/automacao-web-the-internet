@@ -4,6 +4,7 @@ require "selenium-webdriver"
 require "dotenv/load"
 require "digest"
 require "rest-client"
+require "fileutils"
 require_relative "login"
 require_relative "hooks"
 
