@@ -1,5 +1,5 @@
 #language: pt
-@t
+
 Funcionalidade: Teste de Login
 
   Cenário: Login com sucesso
