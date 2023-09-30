@@ -2,7 +2,7 @@
 
 Funcionalidade: Teste de Exit Intent
 
-  Cenário: Verificar o funcionamento do Exit Intent
-    Dado que estou na página Exit Intent
+  Cenario: Verificar o funcionamento do Exit Intent
+    Dado que estou na pagina Exit Intent
     Quando movo o cursor do mouse para fora da janela do navegador
-    Então deve aparecer o popup
+    Entao deve aparecer o popup

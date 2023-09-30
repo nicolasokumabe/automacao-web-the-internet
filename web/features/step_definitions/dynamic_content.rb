@@ -1,5 +1,4 @@
-# features/step_definitions/dynamic_content.rb
-Dado("que estou na página de dynamic content") do
+Dado("que estou na pagina de dynamic content") do
   visit "http://the-internet.herokuapp.com/dynamic_content"
 end
 
@@ -13,11 +12,11 @@ Quando("verifico todas as imagens atuais") do
   end
 end
 
-Quando("recarrego a página") do
+Quando("recarrego a pagina") do
   visit current_url
 end
 
-Então("devo verificar se as imagens na página foram alteradas") do
+Entao("devo verificar se as imagens na pagina foram alteradas") do
   @imagens = all(".large-2.columns img")
   imagens_nao_modificadas = 0
 
@@ -37,7 +36,7 @@ Quando("verifico todos os textos de imagens atuais") do
   end
 end
 
-Então("devo verificar se todos os campos de texto das imagens são diferentes dos textos anteriores") do
+Entao("devo verificar se todos os campos de texto das imagens sao diferentes dos textos anteriores") do
   textos_atuais = []
   all(".large-10.columns").each do |texto|
     textos_atuais << texto.text
@@ -50,7 +49,7 @@ Dado("que eu clico no botao {string}") do |botao|
   click_link(botao)
 end
 
-Então("devo verificar se pelo menos um texto de imagem foi modificado") do
+Entao("devo verificar se pelo menos um texto de imagem foi modificado") do
   textos_de_imagem = all(".large-10.columns")
 
   texto_modificado = textos_de_imagem.any? do |texto|

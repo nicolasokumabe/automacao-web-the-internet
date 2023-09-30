@@ -1,4 +1,4 @@
-Dado("que acesso a página Disappearing Elements") do
+Dado("que estou na pagina Disappearing Elements") do
   visit "http://the-internet.herokuapp.com/disappearing_elements"
 end
 
@@ -6,7 +6,7 @@ Quando("clico no botao Home") do
   click_link("Home")
 end
 
-Então("devo ser redirecionado para a página inicial") do
+Entao("devo ser redirecionado para a pagina inicial") do
   expect(page).to have_css("h1.heading", text: "Welcome to the-internet")
 
   expected_url = "http://the-internet.herokuapp.com/"
@@ -17,7 +17,7 @@ Quando("clico no botao About") do
   click_link("About")
 end
 
-Então("devo ser redirecionado para a página Sobre") do
+Entao("devo ser redirecionado para a pagina Sobre") do
   expected_url = "http://the-internet.herokuapp.com/about/"
   expect(page).to have_current_path(expected_url)
 
@@ -28,7 +28,7 @@ Quando("clico no botao Contact Us") do
   click_link("Contact Us")
 end
 
-Então("devo ser redirecionado para a página Contate-nos") do
+Entao("devo ser redirecionado para a pagina Contate-nos") do
   expected_url = "http://the-internet.herokuapp.com/contact-us/"
   expect(page).to have_current_path(expected_url)
 
@@ -39,7 +39,7 @@ Quando("clico no botao Portfolio") do
   click_link("Portfolio")
 end
 
-Então("devo ser redirecionado para a página Portfolio") do
+Entao("devo ser redirecionado para a pagina Portfolio") do
   expected_url = "http://the-internet.herokuapp.com/portfolio/"
   expect(page).to have_current_path(expected_url)
 

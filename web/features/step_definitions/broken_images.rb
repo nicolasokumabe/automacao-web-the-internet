@@ -1,12 +1,12 @@
-Dado("que acesso a página Broken Images") do
+Dado("que estou na pagina Broken Images") do
   visit "http://the-internet.herokuapp.com/broken_images"
 end
 
-Quando("verifico se há imagens quebradas") do
-  # Há imagens quebradas
+Quando("verifico se ha imagens quebradas") do
+  # ha imagens quebradas
 end
 
-Então("eu vejo uma ou mais imagens quebradas") do
+Entao("eu vejo uma ou mais imagens quebradas") do
   imagens_quebradas = []
 
   all("img").each do |imagem|
@@ -19,7 +19,7 @@ Então("eu vejo uma ou mais imagens quebradas") do
 end
 
 # Caso eu queira detectar nenhuma imagem falha (vida real)
-# Então("eu nao deveria ver imagens quebradas") do
+# Entao("eu nao deveria ver imagens quebradas") do
 #   all("img").each do |imagem|
 #     expect(imagem["naturalWidth"].to_i).to be > 0, "Imagem quebrada encontrada: #{imagem[:src]}"
 #   end

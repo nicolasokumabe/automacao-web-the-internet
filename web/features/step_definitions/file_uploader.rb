@@ -1,4 +1,4 @@
-Dado("que estou na página de upload") do
+Dado("que estou na pagina de upload") do
   visit "http://the-internet.herokuapp.com/upload"
 end
 
@@ -8,6 +8,6 @@ Quando("eu selecionar o arquivo {string} para upload") do |file_name|
   attach_file("file", file_path)
 end
 
-Então("devo ver a mensagem {string} na página") do |message|
+Entao("devo ver a mensagem {string} na pagina") do |message|
   expect(page).to have_content(message)
 end

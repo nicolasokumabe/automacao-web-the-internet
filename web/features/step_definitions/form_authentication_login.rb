@@ -1,4 +1,4 @@
-Dado("que estou na página de login") do
+Dado("que estou na pagina de login") do
   visit "http://the-internet.herokuapp.com/login"
 end
 
@@ -10,7 +10,7 @@ Quando("eu preencho o campo {string} com senha valida") do |campo|
   fill_in campo, with: "#{SENHA2}"
 end
 
-Então("devo ser redirecionado para a página de sucesso") do
+Entao("devo ser redirecionado para a pagina de sucesso") do
   Capybara.default_max_wait_time = 2
   current_url = page.current_url
   expect(current_url).to eq("http://the-internet.herokuapp.com/secure")
@@ -28,7 +28,7 @@ Quando("eu preencho o campo {string} com senha invalida") do |campo|
   fill_in campo, with: "#{SENHA3}"
 end
 
-Então("volto para a area de login") do
+Entao("volto para a area de login") do
   Capybara.default_max_wait_time = 2
   current_url = page.current_url
   expect(current_url).to eq("http://the-internet.herokuapp.com/login")

@@ -2,12 +2,8 @@
 
 Funcionalidade: Recuperação de Senha
 
-  Cenário: Solicitar recuperação de senha
-    Dado que estou na página de recuperação de senha
-    Quando eu insiro meu e-mail válido
+  Cenario: Solicitar recuperação de senha
+    Dado que estou na pagina de recuperação de senha
+    Quando eu insiro meu e-mail valido
     E eu clico no botao "Retrieve password"
-    Então devo ver a mensagem "Internal Server Error"
-    
-
-  
-
+    Entao devo ver a mensagem "Internal Server Error"

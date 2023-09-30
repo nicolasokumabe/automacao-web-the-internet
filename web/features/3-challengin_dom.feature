@@ -1,51 +1,51 @@
 #language: pt
 
-Funcionalidade: Validação da Página "Challenging DOM"
+Funcionalidade: Validação da pagina "Challenging DOM"
   
-  Cenário: Verificar título da página
-    Dado que acesso a página Challenging DOM
-    Quando eu visualizo a página Challenging DOM
-    Então devo ver o título "Challenging DOM"
+  Cenario: Verificar titulo da pagina
+    Dado que estou na pagina Challenging DOM
+    Quando eu visualizo a pagina Challenging DOM
+    Entao devo ver o titulo "Challenging DOM"
 
-  Cenário: Verificar botao "Edit"
-    Dado que acesso a página Challenging DOM
-    Quando eu visualizo a página Challenging DOM
-    Então devo ver um botao com o texto edit
+  Cenario: Verificar botao "Edit"
+    Dado que estou na pagina Challenging DOM
+    Quando eu visualizo a pagina Challenging DOM
+    Entao devo ver um botao com o texto edit
 
-  Cenário: Verificar tabela
-    Dado que acesso a página Challenging DOM
-    Quando eu visualizo a página Challenging DOM
-    Então devo ver uma tabela com os cabeçalhos "Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Diceret", "Action"
+  Cenario: Verificar tabela
+    Dado que estou na pagina Challenging DOM
+    Quando eu visualizo a pagina Challenging DOM
+    Entao devo ver uma tabela com os cabeçalhos "Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Diceret", "Action"
 
-  Cenário: Verificar botões "Delete"
-    Dado que acesso a página Challenging DOM
-    Quando eu visualizo a página Challenging DOM
-    Então devo ver pelo menos um botao com o texto delete
+  Cenario: Verificar botões "Delete"
+    Dado que estou na pagina Challenging DOM
+    Quando eu visualizo a pagina Challenging DOM
+    Entao devo ver pelo menos um botao com o texto delete
 
-  Cenário: Verificar imagem
-    Dado que acesso a página Challenging DOM
-    Quando eu visualizo a página Challenging DOM
-    Então devo ver uma imagem
+  Cenario: Verificar imagem
+    Dado que estou na pagina Challenging DOM
+    Quando eu visualizo a pagina Challenging DOM
+    Entao devo ver uma imagem
 
-  Cenário: Verificar figura geométrica
-    Dado que acesso a página Challenging DOM
-    Quando eu visualizo a página Challenging DOM
-    Então devo ver uma figura geométrica na página
+  Cenario: Verificar figura geometrica
+    Dado que estou na pagina Challenging DOM
+    Quando eu visualizo a pagina Challenging DOM
+    Entao devo ver uma figura geometrica na pagina
 
-  Cenário: Verificar botao azul
-    Dado que acesso a página Challenging DOM
+  Cenario: Verificar botao azul
+    Dado que estou na pagina Challenging DOM
     Quando eu visualizo o botao azul
     E aperto o botao azul
-    Então o id do botao azul deve mudar
+    Entao o id do botao azul deve mudar
 
-  Cenário: Verificar botao vermelho
-    Dado que acesso a página Challenging DOM
+  Cenario: Verificar botao vermelho
+    Dado que estou na pagina Challenging DOM
     Quando eu visualizo o botao vermelho
     E aperto o botao vermelho
-    Então o id do botao vermelho deve mudar
+    Entao o id do botao vermelho deve mudar
 
-  Cenário: Verificar botao verde
-    Dado que acesso a página Challenging DOM
+  Cenario: Verificar botao verde
+    Dado que estou na pagina Challenging DOM
     Quando eu visualizo o botao verde
     E aperto o botao verde
-    Então o id do botao verde deve mudar
+    Entao o id do botao verde deve mudar

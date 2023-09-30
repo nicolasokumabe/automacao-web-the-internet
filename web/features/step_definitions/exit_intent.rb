@@ -1,4 +1,4 @@
-Dado("que estou na página Exit Intent") do
+Dado("que estou na pagina Exit Intent") do
   visit "http://the-internet.herokuapp.com/exit_intent"
   expect(page).to have_css("h3", text: "Exit Intent")
 end
@@ -16,7 +16,7 @@ Quando("movo o cursor do mouse para fora da janela do navegador") do
   system("xdotool mousemove 0 0")
 end
 
-Então("deve aparecer o popup") do
+Entao("deve aparecer o popup") do
   find("#ouibounce-modal", visible: true)
 
   expect(page).to have_css("#ouibounce-modal", visible: true)

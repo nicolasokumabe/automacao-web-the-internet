@@ -1,4 +1,4 @@
-Quando("informo minhas credenciais válidas") do
+Quando("informo minhas credenciais validas") do
   system("xdotool type '#{EMAIL}'")
 
   system("xdotool key Tab")
@@ -11,7 +11,7 @@ Quando("informo minhas credenciais válidas") do
 
 end
 
-Quando("não informo minhas credenciais válidas") do
+Quando("nao informo minhas credenciais validas") do
   system("xdotool key Tab")
 
   system("xdotool key Tab")
@@ -32,7 +32,7 @@ Quando("eu clicar no botao {string}") do |button_text|
   # click_button button_text
 end
 
-Então("devo ver a mensagem {string}") do |mensagem|
+Entao("devo ver a mensagem {string}") do |mensagem|
   expect(page).to have_content(mensagem)
   # expect(page).to have_content mensagem
 end

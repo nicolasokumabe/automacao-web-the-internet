@@ -1,10 +1,10 @@
-Dado("que estou na página de Autenticação Digest") do
+Dado("que estou na pagina de Autenticação Digest") do
   visit "http://the-internet.herokuapp.com/digest_auth"
-  # Encontre um elemento em branco na página e clique nele
+  # Encontre um elemento em branco na pagina e clique nele
 
 end
 
-Então("devo ver a mensagem Esta página não está funcionando") do
+Entao("devo ver a mensagem Esta pagina nao estah funcionando") do
   # find(".neterror")
 
   # verificacao da pagina de erro com "css" pelo "style"
@@ -16,17 +16,17 @@ Então("devo ver a mensagem Esta página não está funcionando") do
 
   # verificacao com content
   element = find('span[jsselect="heading"]')
-  expect(element).to have_content("Esta página não está funcionando")
+  expect(element).to have_content("Esta pagina nao estah funcionando")
 
   # verificacao com XPath
-  #   expect(page).to have_xpath('//span[@jsselect="heading"][text()="Esta página não está funcionando"]')
+  #   expect(page).to have_xpath('//span[@jsselect="heading"][text()="Esta pagina nao estah funcionando"]')
 
   # verificacao com css
-  #   expect(page).to have_css('span[jsselect="heading"]', text: "Esta página não está funcionando")
+  #   expect(page).to have_css('span[jsselect="heading"]', text: "Esta pagina nao estah funcionando")
 
 end
 
-Então("devo ver a mensagem Congratulations! You must have the proper credentials.") do
+Entao("devo ver a mensagem Congratulations! You must have the proper credentials.") do
   expect(page).to have_css("p", text: "Congratulations! You must have the proper credentials.")
 
   # expect(page).to have_xpath('//p[contains(text(), "Congratulations! You must have the proper credentials.")]')

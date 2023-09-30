@@ -2,7 +2,7 @@
 
 Funcionalidade: Verificar o menu flutuante
 
-  Cenário: Menu flutuante permanece visível ao rolar a página
-    Dado que estou na página de Floating Menu
-    Quando eu rolo a página para baixo
-    Então o menu flutuante deve permanecer visível
+  Cenario: Menu flutuante permanece visivel ao rolar a pagina
+    Dado que estou na pagina de Floating Menu
+    Quando eu rolo a pagina para baixo
+    Entao o menu flutuante deve permanecer visivel

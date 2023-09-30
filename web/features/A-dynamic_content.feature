@@ -1,22 +1,22 @@
 #language: pt
 
-Funcionalidade: Verificar Conteúdo Dinâmico
+Funcionalidade: Verificar conteudo Dinamico
 
-  Cenário: Verificar se o conteúdo na página é dinâmico
-    Dado que estou na página de dynamic content
+  Cenario: Verificar se o conteudo na pagina eh Dinamico
+    Dado que estou na pagina de dynamic content
     Quando verifico todas as imagens atuais
-    E recarrego a página
-    Então devo verificar se as imagens na página foram alteradas
+    E recarrego a pagina
+    Entao devo verificar se as imagens na pagina foram alteradas
 
-  Cenário: Verificar se os campos de texto das imagens mudam
-    Dado que estou na página de dynamic content
+  Cenario: Verificar se os campos de texto das imagens mudam
+    Dado que estou na pagina de dynamic content
     Quando verifico todos os textos de imagens atuais
-    E recarrego a página
-    Então devo verificar se todos os campos de texto das imagens são diferentes dos textos anteriores
+    E recarrego a pagina
+    Entao devo verificar se todos os campos de texto das imagens sao diferentes dos textos anteriores
 
-  Cenário: Verificar mudança no conteúdo após clicar no botao
-    Dado que estou na página de dynamic content
+  Cenario: Verificar mudança no conteudo apos clicar no botao
+    Dado que estou na pagina de dynamic content
     E que eu clico no botao "click here"
     Quando verifico todos os textos de imagens atuais
-    E recarrego a página
-    Então devo verificar se pelo menos um texto de imagem foi modificado
+    E recarrego a pagina
+    Entao devo verificar se pelo menos um texto de imagem foi modificado

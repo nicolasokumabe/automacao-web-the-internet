@@ -3,11 +3,11 @@
 Funcionalidade: Adicionar/remover elemento
 
   Cenario: Adicionar elemento
-    Dado que acesso a página Add/Remove Elements
+    Dado que estou na pagina Add/Remove Elements
     Quando clico em Add Element
-    Então eh adicionado o elemento
+    Entao eh adicionado o elemento
 
   Cenario: Remover elemento
-    Dado que acesso a página Add/Remove Elements
+    Dado que estou na pagina Add/Remove Elements
     Quando clico em Delete
-    Então o elemento adicionado eh removido
+    Entao o elemento adicionado eh removido

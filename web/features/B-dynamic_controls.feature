@@ -1,26 +1,26 @@
 #language: pt
 
-Funcionalidade: Controles Dinâmicos
+Funcionalidade: Controles Dinamicos
 
-  Cenário: Habilitar e desabilitar campo de entrada
-    Dado que estou na página de Dynamic Controls
+  Cenario: Habilitar e desabilitar campo de entrada
+    Dado que estou na pagina de Dynamic Controls
     Quando eu clico no botao Enable
-    Então o campo de entrada deve estar habilitado
+    Entao o campo de entrada deve estar habilitado
     E eu clico no botao Disable
     E o campo de entrada deve estar desabilitado
 
-  Cenário: Adicionar e remover a caixa de seleção
-    Dado que estou na página de Dynamic Controls
+  Cenario: Adicionar e remover a caixa de selecao
+    Dado que estou na pagina de Dynamic Controls
     Quando eu clico no botao Remove
-    Então a caixa de seleção não deve ser visível
+    Entao a caixa de selecao nao deve ser visivel
     E eu clico no botao Add
-    E a caixa de seleção deve ser visível
+    E a caixa de selecao deve ser visivel
 
-  Cenário: Acionando a caixa de seleção
-    Dado que estou na página de Dynamic Controls
+  Cenario: Acionando a caixa de selecao
+    Dado que estou na pagina de Dynamic Controls
     Quando eu clico no botao Remove
-    Então a caixa de seleção não deve ser visível
+    Entao a caixa de selecao nao deve ser visivel
     E eu clico no botao Add
-    E a caixa de seleção deve ser visível
+    E a caixa de selecao deve ser visivel
     E clico em remove selecionando a caixa
     E vejo a opcao selecionada

@@ -1,4 +1,4 @@
-Dado("que estou na página de Dynamic Controls") do
+Dado("que estou na pagina de Dynamic Controls") do
   visit "http://the-internet.herokuapp.com/dynamic_controls"
 end
 
@@ -6,7 +6,7 @@ Quando("eu clico no botao Enable") do
   click_button "Enable"
 end
 
-Então("o campo de entrada deve estar habilitado") do
+Entao("o campo de entrada deve estar habilitado") do
   find("#loading")
   Capybara.default_max_wait_time = 5
   expect(page).to have_css("p#message", text: "It's enabled!")
@@ -17,11 +17,11 @@ Então("o campo de entrada deve estar habilitado") do
   input.set("pwd123")
 end
 
-Então("eu clico no botao Disable") do
+Entao("eu clico no botao Disable") do
   click_button "Disable"
 end
 
-Então("o campo de entrada deve estar desabilitado") do
+Entao("o campo de entrada deve estar desabilitado") do
   find("#loading")
   Capybara.default_max_wait_time = 5
   expect(page).to have_css("p#message", text: "It's disabled!")
@@ -35,7 +35,7 @@ Quando("eu clico no botao Remove") do
   click_button "Remove"
 end
 
-Então("a caixa de seleção não deve ser visível") do
+Entao("a caixa de selecao nao deve ser visivel") do
   find("#loading")
   Capybara.default_max_wait_time = 5
   expect(page).to have_css("p#message", text: "It's gone!")
@@ -44,11 +44,11 @@ Então("a caixa de seleção não deve ser visível") do
   expect(page).to have_no_selector('input[type="checkbox"]#checkbox')
 end
 
-Então("eu clico no botao Add") do
+Entao("eu clico no botao Add") do
   click_button "Add"
 end
 
-Então("a caixa de seleção deve ser visível") do
+Entao("a caixa de selecao deve ser visivel") do
   find("#loading")
   Capybara.default_max_wait_time = 5
   expect(page).to have_css("p#message", text: "It's back!")
@@ -58,11 +58,11 @@ Então("a caixa de seleção deve ser visível") do
   expect(@checkbox).to be_visible
 end
 
-Então("clico em remove selecionando a caixa") do
+Entao("clico em remove selecionando a caixa") do
   @checkbox.check
   click_button "Remove"
 end
 
-Então("vejo a opcao selecionada") do
+Entao("vejo a opcao selecionada") do
   expect(page).to have_content("A checkbox")
 end

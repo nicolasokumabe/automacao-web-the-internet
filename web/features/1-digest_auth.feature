@@ -2,14 +2,14 @@
 
 Funcionalidade: Digest Auth
 
-  Cenário: Autenticação Criptografada Cancelada
-    Dado que estou na página de Autenticação Digest
-    Quando não informo minhas credenciais válidas
+  Cenario: Autenticação Criptografada Cancelada
+    Dado que estou na pagina de Autenticação Digest
+    Quando nao informo minhas credenciais validas
     E clico no botao cancelar
-    Então devo ver a mensagem Esta página não está funcionando
+    Entao devo ver a mensagem Esta pagina nao estah funcionando
 
-  Cenário: Autenticação Criptografada
-    Dado que estou na página de Autenticação Digest
-    Quando informo minhas credenciais válidas
+  Cenario: Autenticação Criptografada
+    Dado que estou na pagina de Autenticação Digest
+    Quando informo minhas credenciais validas
     E clico no botao de login
-    Então devo ver a mensagem Congratulations! You must have the proper credentials.
+    Entao devo ver a mensagem Congratulations! You must have the proper credentials.

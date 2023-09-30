@@ -1,23 +1,23 @@
 #language: pt
 
-Funcionalidade: Verificação de Elementos que Desaparecem
+Funcionalidade: Verificacao de Elementos que Desaparecem
 
-  Cenário: Verificar botao Home
-    Dado que acesso a página Disappearing Elements
+  Cenario: Verificar botao Home
+    Dado que estou na pagina Disappearing Elements
     Quando clico no botao Home
-    Então devo ser redirecionado para a página inicial
+    Entao devo ser redirecionado para a pagina inicial
 
-  Cenário: Verificar botao About
-    Dado que acesso a página Disappearing Elements
+  Cenario: Verificar botao About
+    Dado que estou na pagina Disappearing Elements
     Quando clico no botao About
-    Então devo ser redirecionado para a página Sobre
+    Entao devo ser redirecionado para a pagina Sobre
 
-  Cenário: Verificar botao Contact Us
-    Dado que acesso a página Disappearing Elements
+  Cenario: Verificar botao Contact Us
+    Dado que estou na pagina Disappearing Elements
     Quando clico no botao Contact Us
-    Então devo ser redirecionado para a página Contate-nos
+    Entao devo ser redirecionado para a pagina Contate-nos
 
-  Cenário: Verificar botao Portfolio
-    Dado que acesso a página Disappearing Elements
+  Cenario: Verificar botao Portfolio
+    Dado que estou na pagina Disappearing Elements
     Quando clico no botao Portfolio
-    Então devo ser redirecionado para a página Portfolio
+    Entao devo ser redirecionado para a pagina Portfolio

@@ -1,13 +1,13 @@
 #language: pt
 
-Funcionalidade: Selecionar Opção em Dropdown
+Funcionalidade: Selecionar opcao em Dropdown
   
-  Cenário: Selecionar uma opção na lista suspensa
-    Dado que estou na página de dropdown
-    Quando seleciono a opção "Option 1"
-    Então a opção "Option 1" deve estar selecionada
+  Cenario: Selecionar uma opcao na lista suspensa
+    Dado que estou na pagina de dropdown
+    Quando seleciono a opcao "Option 1"
+    Entao a opcao "Option 1" deve estar selecionada
     
-  Cenário: Selecionar outra opção na lista suspensa
-    Dado que estou na página de dropdown
-    Quando seleciono a opção "Option 2"
-    Então a opção "Option 2" deve estar selecionada
+  Cenario: Selecionar outra opcao na lista suspensa
+    Dado que estou na pagina de dropdown
+    Quando seleciono a opcao "Option 2"
+    Entao a opcao "Option 2" deve estar selecionada
