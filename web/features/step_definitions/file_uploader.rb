@@ -8,10 +8,6 @@ Quando("eu selecionar o arquivo {string} para upload") do |file_name|
   attach_file("file", file_path)
 end
 
-Quando("eu clicar no botão {string}") do |button_text|
-  click_button(button_text)
-end
-
 Então("devo ver a mensagem {string} na página") do |message|
   expect(page).to have_content(message)
 end

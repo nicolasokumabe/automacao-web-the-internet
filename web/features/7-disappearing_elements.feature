@@ -2,22 +2,22 @@
 
 Funcionalidade: Verificação de Elementos que Desaparecem
 
-  Cenário: Verificar Botão Home
+  Cenário: Verificar botao Home
     Dado que acesso a página Disappearing Elements
-    Quando clico no botão Home
+    Quando clico no botao Home
     Então devo ser redirecionado para a página inicial
 
-  Cenário: Verificar Botão About
+  Cenário: Verificar botao About
     Dado que acesso a página Disappearing Elements
-    Quando clico no botão About
+    Quando clico no botao About
     Então devo ser redirecionado para a página Sobre
 
-  Cenário: Verificar Botão Contact Us
+  Cenário: Verificar botao Contact Us
     Dado que acesso a página Disappearing Elements
-    Quando clico no botão Contact Us
+    Quando clico no botao Contact Us
     Então devo ser redirecionado para a página Contate-nos
 
-  Cenário: Verificar Botão Portfolio
+  Cenário: Verificar botao Portfolio
     Dado que acesso a página Disappearing Elements
-    Quando clico no botão Portfolio
+    Quando clico no botao Portfolio
     Então devo ser redirecionado para a página Portfolio

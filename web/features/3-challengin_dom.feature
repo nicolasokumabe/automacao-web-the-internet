@@ -7,10 +7,10 @@ Funcionalidade: Validação da Página "Challenging DOM"
     Quando eu visualizo a página Challenging DOM
     Então devo ver o título "Challenging DOM"
 
-  Cenário: Verificar botão "Edit"
+  Cenário: Verificar botao "Edit"
     Dado que acesso a página Challenging DOM
     Quando eu visualizo a página Challenging DOM
-    Então devo ver um botão com o texto edit
+    Então devo ver um botao com o texto edit
 
   Cenário: Verificar tabela
     Dado que acesso a página Challenging DOM
@@ -20,7 +20,7 @@ Funcionalidade: Validação da Página "Challenging DOM"
   Cenário: Verificar botões "Delete"
     Dado que acesso a página Challenging DOM
     Quando eu visualizo a página Challenging DOM
-    Então devo ver pelo menos um botão com o texto delete
+    Então devo ver pelo menos um botao com o texto delete
 
   Cenário: Verificar imagem
     Dado que acesso a página Challenging DOM
@@ -32,20 +32,20 @@ Funcionalidade: Validação da Página "Challenging DOM"
     Quando eu visualizo a página Challenging DOM
     Então devo ver uma figura geométrica na página
 
-  Cenário: Verificar botão azul
+  Cenário: Verificar botao azul
     Dado que acesso a página Challenging DOM
-    Quando eu visualizo o botão azul
-    E aperto o botão azul
-    Então o id do botão azul deve mudar
+    Quando eu visualizo o botao azul
+    E aperto o botao azul
+    Então o id do botao azul deve mudar
 
-  Cenário: Verificar botão vermelho
+  Cenário: Verificar botao vermelho
     Dado que acesso a página Challenging DOM
-    Quando eu visualizo o botão vermelho
-    E aperto o botão vermelho
-    Então o id do botão vermelho deve mudar
+    Quando eu visualizo o botao vermelho
+    E aperto o botao vermelho
+    Então o id do botao vermelho deve mudar
 
-  Cenário: Verificar botão verde
+  Cenário: Verificar botao verde
     Dado que acesso a página Challenging DOM
-    Quando eu visualizo o botão verde
-    E aperto o botão verde
-    Então o id do botão verde deve mudar
+    Quando eu visualizo o botao verde
+    E aperto o botao verde
+    Então o id do botao verde deve mudar

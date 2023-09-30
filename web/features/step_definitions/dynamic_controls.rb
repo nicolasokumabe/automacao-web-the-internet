@@ -2,7 +2,7 @@ Dado("que estou na página de Dynamic Controls") do
   visit "http://the-internet.herokuapp.com/dynamic_controls"
 end
 
-Quando("eu clico no botão Enable") do
+Quando("eu clico no botao Enable") do
   click_button "Enable"
 end
 
@@ -17,7 +17,7 @@ Então("o campo de entrada deve estar habilitado") do
   input.set("pwd123")
 end
 
-Então("eu clico no botão Disable") do
+Então("eu clico no botao Disable") do
   click_button "Disable"
 end
 
@@ -31,7 +31,7 @@ Então("o campo de entrada deve estar desabilitado") do
   expect(page).to have_css('input[type="text"][disabled]')
 end
 
-Quando("eu clico no botão Remove") do
+Quando("eu clico no botao Remove") do
   click_button "Remove"
 end
 
@@ -44,7 +44,7 @@ Então("a caixa de seleção não deve ser visível") do
   expect(page).to have_no_selector('input[type="checkbox"]#checkbox')
 end
 
-Então("eu clico no botão Add") do
+Então("eu clico no botao Add") do
   click_button "Add"
 end
 

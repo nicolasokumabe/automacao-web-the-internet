@@ -2,7 +2,7 @@ Dado("que acesso a página Context Menu") do
   visit "http://the-internet.herokuapp.com/context_menu"
 end
 
-Quando("clico com o botão direito do mouse no elemento com id {string}") do |element_id|
+Quando("clico com o botao direito do mouse no elemento com id {string}") do |element_id|
   element = find("##{element_id}")
   page.driver.browser.action.context_click(element.native).perform
 end

@@ -46,7 +46,7 @@ Então("devo verificar se todos os campos de texto das imagens são diferentes d
   expect(textos_atuais).not_to eq(@textos_anteriores)
 end
 
-Dado("que eu clico no botão {string}") do |botao|
+Dado("que eu clico no botao {string}") do |botao|
   click_link(botao)
 end
 

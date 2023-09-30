@@ -2,7 +2,7 @@ Dado("que acesso a página Disappearing Elements") do
   visit "http://the-internet.herokuapp.com/disappearing_elements"
 end
 
-Quando("clico no botão Home") do
+Quando("clico no botao Home") do
   click_link("Home")
 end
 
@@ -13,7 +13,7 @@ Então("devo ser redirecionado para a página inicial") do
   expect(page).to have_current_path(expected_url)
 end
 
-Quando("clico no botão About") do
+Quando("clico no botao About") do
   click_link("About")
 end
 
@@ -24,7 +24,7 @@ Então("devo ser redirecionado para a página Sobre") do
   expect(page).to have_css("h1", text: "Not Found")
 end
 
-Quando("clico no botão Contact Us") do
+Quando("clico no botao Contact Us") do
   click_link("Contact Us")
 end
 
@@ -35,7 +35,7 @@ Então("devo ser redirecionado para a página Contate-nos") do
   expect(page).to have_css("h1", text: "Not Found")
 end
 
-Quando("clico no botão Portfolio") do
+Quando("clico no botao Portfolio") do
   click_link("Portfolio")
 end
 

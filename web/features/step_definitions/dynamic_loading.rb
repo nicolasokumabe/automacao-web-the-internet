@@ -3,8 +3,8 @@ Dado("que estou na página de Dynamic Loading") do
   visit "http://the-internet.herokuapp.com/dynamic_loading"
 end
 
-Quando("eu clico no botão Example {int}") do |numero|
-  # Quando('eu clico no botão Example {float}') do |float|
+Quando("eu clico no botao Example {int}") do |numero|
+  # Quando('eu clico no botao Example {float}') do |float|
   click_link "Example #{numero}"
 end
 
