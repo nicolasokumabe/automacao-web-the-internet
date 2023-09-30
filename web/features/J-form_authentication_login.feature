@@ -1,6 +1,6 @@
 #language: pt
-
-Feature: Teste de Login
+@t
+Funcionalidade: Teste de Login
 
   Cenário: Login com sucesso
     Dado que estou na página de login
