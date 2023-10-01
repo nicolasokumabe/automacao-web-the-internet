@@ -50,8 +50,8 @@ Quando("aperto o botao azul") do
   botao_azul = find("a.button[class='button']")
   @id_anterior_azul = botao_azul["id"]
   botao_azul.click
-  botao_azul_apos_clicar = find("a.button[class='button']")
-  @novo_id_azul = botao_azul_apos_clicar["id"]
+  botao_azul_apos_clico = find("a.button[class='button']")
+  @novo_id_azul = botao_azul_apos_clico["id"]
 end
 
 Quando("eu visualizo o botao vermelho") do
@@ -63,8 +63,8 @@ Quando("aperto o botao vermelho") do
   @id_anterior_vermelho = botao_vermelho["id"]
   botao_vermelho.click
   # click_link(class: "button alert")
-  botao_vermelho_apos_clicar = find("a.button.alert[class='button alert']")
-  @novo_id_vermelho = botao_vermelho_apos_clicar["id"]
+  botao_vermelho_apos_clico = find("a.button.alert[class='button alert']")
+  @novo_id_vermelho = botao_vermelho_apos_clico["id"]
 end
 
 Quando("eu visualizo o botao verde") do
@@ -76,8 +76,8 @@ Quando("aperto o botao verde") do
   @id_anterior_verde = botao_verde["id"]
   botao_verde.click
   # click_link(class: "button success")
-  botao_verde_apos_clicar = find("a.button.success[class='button success']")
-  @novo_id_verde = botao_verde_apos_clicar["id"]
+  botao_verde_apos_clico = find("a.button.success[class='button success']")
+  @novo_id_verde = botao_verde_apos_clico["id"]
 end
 
 Entao("o id do botao azul deve mudar") do
