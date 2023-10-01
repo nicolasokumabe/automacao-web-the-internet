@@ -44,3 +44,24 @@ Entao("o campo de texto do frame simples deve conter {string}") do |texto|
     # expect(find("#tinymce").value).to eq(texto)
   end
 end
+
+Dado("que estou na pagina de frame simples") do
+  visit "http://the-internet.herokuapp.com/iframe"
+end
+
+Quando("eu mudo o formato do texto") do
+  click_button("Format")
+  find("div.tox-collection__item-label", text: "Formats").click
+  find("div.tox-collection__item-label", text: "Headings").click
+  find('div[title="Heading 1"]').select_option
+end
+
+Entao("o campo de texto do frame simples deve mudar de formato") do
+  # within('div[title="Heading 1"]') do
+  #   expect(page).to have_css('[aria-checked="true"]')
+  # end
+  click_button("Format")
+  find("div.tox-collection__item-label", text: "Formats").click
+  find("div.tox-collection__item-label", text: "Headings").click
+  find("div[title='Heading 1'][aria-checked='true']")
+end
