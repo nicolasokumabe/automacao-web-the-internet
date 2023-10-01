@@ -16,7 +16,7 @@ Entao("devo ver a mensagem Esta pagina nao estah funcionando") do
 
   # verificacao com content
   element = find('span[jsselect="heading"]')
-  expect(element).to have_content("Esta pagina nao estah funcionando")
+  expect(element).to have_content("Esta página não está funcionando")
 
   # verificacao com XPath
   #   expect(page).to have_xpath('//span[@jsselect="heading"][text()="Esta pagina nao estah funcionando"]')

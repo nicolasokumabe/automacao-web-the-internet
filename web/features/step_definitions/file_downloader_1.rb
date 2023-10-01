@@ -3,7 +3,7 @@ Dado("que estou na pagina de Download") do
 end
 
 Quando("eu clico no link de download do arquivo") do
-  click_link "img.png"
+  click_link "logo.png"
 end
 
 Entao("o arquivo deve ser baixado com sucesso") do

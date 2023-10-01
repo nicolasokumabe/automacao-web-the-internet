@@ -27,9 +27,9 @@ Quando("clico no botao de login") do
   system("xdotool key Return")
 end
 
-Quando("eu clico no botao {string}") do |button_text|
-  click_button(button_text)
-  # click_button button_text
+Quando("eu clico no botao {string}") do |botao|
+  click_button(botao)
+  # click_button botao
 end
 
 Entao("devo ver a mensagem {string}") do |mensagem|

@@ -14,7 +14,7 @@ Funcionalidade: Manipular Frames
     E eu entro no frame simples
     E eu digito "Em Busca do Primeiro Emprego" no campo de texto do frame simples
     Entao o campo de texto do frame simples deve conter "Em Busca do Primeiro Emprego"
-@t
+
   Cenario: Verificar funcionalidade do iFrame
     Dado que estou na pagina de frame simples
     Quando eu mudo o formato do texto

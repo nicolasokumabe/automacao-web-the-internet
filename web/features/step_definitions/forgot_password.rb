@@ -5,7 +5,3 @@ end
 Quando("eu insiro meu e-mail valido") do
   fill_in "email", with: "#{EMAIL}"
 end
-
-E("eu clico no botao {string}") do |botao|
-  click_button(botao)
-end
