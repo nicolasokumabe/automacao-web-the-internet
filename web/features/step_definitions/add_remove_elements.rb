@@ -1,7 +1,3 @@
-Dado('que estou na pagina Add\/Remove Elements') do
-  visit "http://the-internet.herokuapp.com/add_remove_elements/"
-end
-
 Quando("clico em Add Element") do
   click_button "Add Element"
 end

@@ -1,7 +1,3 @@
-Dado("que estou na pagina de dynamic content") do
-  visit "http://the-internet.herokuapp.com/dynamic_content"
-end
-
 Quando("verifico todas as imagens atuais") do
   @imagens = all(".large-2.columns img")
 

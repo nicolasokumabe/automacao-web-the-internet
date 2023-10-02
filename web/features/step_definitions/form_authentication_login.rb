@@ -1,7 +1,3 @@
-Dado("que estou na pagina de login") do
-  visit "http://the-internet.herokuapp.com/login"
-end
-
 Quando("eu preencho o campo {string} com email valido") do |campo|
   fill_in campo, with: "#{EMAIL2}"
 end

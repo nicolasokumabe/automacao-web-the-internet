@@ -1,9 +1,3 @@
-Dado("que estou na pagina de Autenticação Digest") do
-  visit "http://the-internet.herokuapp.com/digest_auth"
-  # Encontre um elemento em branco na pagina e clique nele
-
-end
-
 Entao("devo ver a mensagem Esta pagina nao estah funcionando") do
   # find(".neterror")
 

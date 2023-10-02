@@ -3,7 +3,7 @@
 Funcionalidade: Adicionar/remover elemento
 
   Cenario: Adicionar elemento
-    Dado que estou na pagina Add/Remove Elements
+    Dado que estou na pagina "http://the-internet.herokuapp.com/add_remove_elements/"
     Quando clico em Add Element
     Entao eh adicionado o elemento
 

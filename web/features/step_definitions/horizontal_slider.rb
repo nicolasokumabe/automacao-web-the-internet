@@ -1,7 +1,3 @@
-Dado("que estou na pagina {string}") do |url|
-  visit(url)
-end
-
 Quando("eu mover o controle deslizante para a posicao {float}") do |posicao|
   slider = find('input[type="range"]').click
   slider.set(posicao)

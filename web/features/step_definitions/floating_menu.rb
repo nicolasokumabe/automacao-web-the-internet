@@ -1,7 +1,3 @@
-Dado("que estou na pagina de Floating Menu") do
-  visit "http://the-internet.herokuapp.com/floating_menu"
-end
-
 Quando("eu rolo a pagina para baixo") do
   # Rola a pagina usando JavaScript para que o menu flutuante seja revelado
   page.execute_script("window.scrollBy(0, 400)")

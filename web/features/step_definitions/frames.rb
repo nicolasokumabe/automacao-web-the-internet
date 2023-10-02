@@ -1,7 +1,3 @@
-Dado("que estou na pagina de Frames") do
-  visit "http://the-internet.herokuapp.com/frames"
-end
-
 Quando("eu entro no iframe") do
   Capybara.default_max_wait_time = 2
   current_url = page.current_url

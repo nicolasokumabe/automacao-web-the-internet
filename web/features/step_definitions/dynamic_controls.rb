@@ -1,7 +1,3 @@
-Dado("que estou na pagina de Dynamic Controls") do
-  visit "http://the-internet.herokuapp.com/dynamic_controls"
-end
-
 Quando("eu clico no botao Enable") do
   click_button "Enable"
 end

@@ -1,7 +1,3 @@
-Dado("que estou na pagina Challenging DOM") do
-  visit "http://the-internet.herokuapp.com/challenging_dom"
-end
-
 Quando("eu visualizo a pagina Challenging DOM") do
   expect(page).to have_css(".no-js")
 end

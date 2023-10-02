@@ -1,7 +1,3 @@
-Dado("que estou na pagina Broken Images") do
-  visit "http://the-internet.herokuapp.com/broken_images"
-end
-
 Quando("verifico se ha imagens quebradas") do
   # ha imagens quebradas
 end

@@ -1,9 +1,6 @@
-Dado("que estou na pagina de Dynamic Loading") do
-  @hw = "Hello World!"
-  visit "http://the-internet.herokuapp.com/dynamic_loading"
-end
-
 Quando("eu clico no botao Example {int}") do |numero|
+  @hw = "Hello World!"
+
   # Quando('eu clico no botao Example {float}') do |float|
   click_link "Example #{numero}"
 end

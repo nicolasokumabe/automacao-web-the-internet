@@ -1,7 +1,3 @@
-Dado("que acesso a pagina Basic Auth") do
-  visit "http://the-internet.herokuapp.com/basic_auth"
-end
-
 Entao("recebo a mensagem Not authorized") do
   expect(page).to have_css("body", text: "Not authorized")
   # expect(page).to have_xpath('//body[contains(text(), "Not authorized")]')

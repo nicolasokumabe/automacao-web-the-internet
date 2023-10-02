@@ -1,7 +1,3 @@
-Dado("que estou na pagina de Download") do
-  visit "http://the-internet.herokuapp.com/download"
-end
-
 Quando("eu clico no link de download do arquivo") do
   click_link "logo.png"
 end

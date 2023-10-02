@@ -1,3 +1,21 @@
+Dado("que estou na pagina {string}") do |url|
+  visit(url)
+end
+
+Quando("eu clico no botao {string}") do |botao|
+  click_button(botao)
+  # click_button botao
+end
+
+Quando("eu clico no link {string}") do |link|
+  click_link(link)
+end
+
+Entao("devo ver a mensagem {string}") do |mensagem|
+  expect(page).to have_content(mensagem)
+  # expect(page).to have_content mensagem
+end
+
 Quando("informo minhas credenciais validas") do
   system("xdotool type '#{EMAIL}'")
 
@@ -25,18 +43,4 @@ Quando("clico no botao de login") do
   system("xdotool key Tab")
 
   system("xdotool key Return")
-end
-
-Quando("eu clico no botao {string}") do |botao|
-  click_button(botao)
-  # click_button botao
-end
-
-Entao("devo ver a mensagem {string}") do |mensagem|
-  expect(page).to have_content(mensagem)
-  # expect(page).to have_content mensagem
-end
-
-Quando("eu clico no link {string}") do |link|
-  click_link(link)
 end

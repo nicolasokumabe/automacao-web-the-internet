@@ -1,7 +1,3 @@
-Dado("que estou na pagina de Arrastar e Soltar") do
-  visit "http://the-internet.herokuapp.com/drag_and_drop"
-end
-
 Quando("arrasto o elemento A para o local do elemento B") do
   element_a = find("#column-a")
   element_b = find("#column-b")

@@ -1,9 +1,6 @@
-Dado("que estou na pagina de {string}") do |nome|
-  visit "http://the-internet.herokuapp.com/entry_ad"
-  expect(page).to have_css("h3", text: nome)
-end
-
 Quando("eu fecho o anuncio pop-up") do
+  expect(page).to have_css("h3", text: "Entry Ad")
+
   expect(page).to have_css(".modal")
 
   find("#modal > div.modal > div.modal-footer > p").click

@@ -1,7 +1,3 @@
-Dado("que estou na pagina Disappearing Elements") do
-  visit "http://the-internet.herokuapp.com/disappearing_elements"
-end
-
 Quando("clico no botao Home") do
   click_link("Home")
 end

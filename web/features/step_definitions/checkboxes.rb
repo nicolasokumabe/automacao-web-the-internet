@@ -1,7 +1,3 @@
-Dado("que estou na pagina Checkboxes") do
-  visit "http://the-internet.herokuapp.com/checkboxes"
-end
-
 Quando("eu verifico o estado do primeiro checkbox") do
   @first_checkbox = find('input[type="checkbox"]:first-child')
 end

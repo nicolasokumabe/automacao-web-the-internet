@@ -1,7 +1,3 @@
-Dado("que estou na pagina de upload") do
-  visit "http://the-internet.herokuapp.com/upload"
-end
-
 Quando("eu selecionar o arquivo {string} para upload") do |file_name|
   file_path = File.expand_path("~/Downloads/#{file_name}", __FILE__)
 

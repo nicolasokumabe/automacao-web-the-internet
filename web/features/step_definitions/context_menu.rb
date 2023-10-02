@@ -1,5 +1,5 @@
 Dado("que estou na pagina Context Menu") do
-  visit "http://the-internet.herokuapp.com/context_menu"
+  visit ""
 end
 
 Quando("clico com o botao direito do mouse no elemento com id {string}") do |element_id|
