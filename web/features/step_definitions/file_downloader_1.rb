@@ -1,4 +1,4 @@
-Quando("eu clico no link de download do arquivo") do
+Quando("clico no link de download do arquivo") do
   click_link "logo.png"
 end
 

@@ -54,5 +54,5 @@ Funcionalidade: Teste de Login
     E eu preencho o campo "Password" com senha valida
     E eu clico no botao "Login"
     Entao devo ser redirecionado para a pagina de sucesso
-    Quando eu clico no link "Logout"
+    Quando clico no link "Logout"
     E volto para a area de login

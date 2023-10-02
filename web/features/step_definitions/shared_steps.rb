@@ -7,7 +7,7 @@ Quando("eu clico no botao {string}") do |botao|
   # click_button botao
 end
 
-Quando("eu clico no link {string}") do |link|
+Quando("clico no link {string}") do |link|
   click_link(link)
 end
 

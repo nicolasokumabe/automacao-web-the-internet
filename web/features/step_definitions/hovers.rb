@@ -21,9 +21,13 @@ end
 
 Entao("devo ver o texto {string}") do |texto|
   expect(page).to have_content(texto)
+
+  # within(@figura) do
+  #   click_link("View profile")
+  # end
 end
 
 def foto_usuario(numero)
-  figura = find(".figure", text: "name: user#{numero}", visible: false)
-  figura.hover
+  @figura = find(".figure", text: "name: user#{numero}", visible: false)
+  @figura.hover
 end
