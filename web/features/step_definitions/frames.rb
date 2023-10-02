@@ -41,7 +41,7 @@ Entao("o campo de texto do frame simples deve conter {string}") do |texto|
   end
 end
 
-Dado("que estou na pagina de frame simples") do
+Dado("que acesso a pagina de frame simples") do
   visit "http://the-internet.herokuapp.com/iframe"
 end
 

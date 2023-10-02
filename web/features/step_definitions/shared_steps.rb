@@ -1,4 +1,4 @@
-Dado("que estou na pagina {string}") do |url|
+Dado("que acesso a pagina {string}") do |url|
   visit(url)
 end
 

@@ -1,4 +1,4 @@
-Dado("que estou na pagina Context Menu") do
+Dado("que acesso a pagina Context Menu") do
   visit ""
 end
 
