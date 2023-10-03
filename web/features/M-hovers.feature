@@ -1,5 +1,6 @@
 #language: pt
-@t
+@hover
+
 Funcionalidade: Verificar a funcionalidade de hover
 
   Cenario: Verificar o hover sobre a imagen 1

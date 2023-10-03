@@ -1,5 +1,5 @@
 Quando("clico no link de download do arquivo") do
-  click_link "logo.png"
+  click_link "aaaa.png"
 end
 
 Entao("o arquivo deve ser baixado com sucesso") do
