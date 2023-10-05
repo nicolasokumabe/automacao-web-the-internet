@@ -16,6 +16,14 @@ Entao("devo ver a mensagem {string}") do |mensagem|
   # expect(page).to have_content mensagem
 end
 
+Entao("devo ver o texto {string}") do |texto|
+  expect(page).to have_content(texto)
+
+  # within(@figura) do
+  #   click_link("View profile")
+  # end
+end
+
 Quando("informo minhas credenciais validas") do
   system("xdotool type '#{EMAIL}'")
 
