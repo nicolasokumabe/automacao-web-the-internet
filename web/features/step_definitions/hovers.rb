@@ -19,14 +19,6 @@ Quando("eu passar o mouse sobre a terceira imagem") do
   foto_usuario(3)
 end
 
-Entao("devo ver o texto {string}") do |texto|
-  expect(page).to have_content(texto)
-
-  # within(@figura) do
-  #   click_link("View profile")
-  # end
-end
-
 def foto_usuario(numero)
   @figura = find(".figure", text: "name: user#{numero}", visible: false)
   @figura.hover
