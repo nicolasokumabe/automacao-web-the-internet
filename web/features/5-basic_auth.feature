@@ -14,4 +14,3 @@ Funcionalidade: Basic Auth
     E clico no botao de login
     Entao sou redirecionado para o Dashboard
     E recebo a mensagem Congratulations! You must have the proper credentials.
-

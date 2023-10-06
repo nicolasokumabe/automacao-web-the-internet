@@ -6,4 +6,3 @@ Funcionalidade: Download de Arquivo
     Dado que acesso a pagina "http://the-internet.herokuapp.com/download"
     Quando clico no link de download do arquivo
     Entao o arquivo deve ser baixado com sucesso
-

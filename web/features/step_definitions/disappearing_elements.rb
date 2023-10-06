@@ -13,13 +13,6 @@ Quando("clico no botao About") do
   click_link("About")
 end
 
-Entao("devo ser redirecionado para a pagina Sobre") do
-  expected_url = "http://the-internet.herokuapp.com/about/"
-  expect(page).to have_current_path(expected_url)
-
-  expect(page).to have_css("h1", text: "Not Found")
-end
-
 Quando("clico no botao Contact Us") do
   click_link("Contact Us")
 end

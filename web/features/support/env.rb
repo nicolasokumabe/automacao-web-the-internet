@@ -6,6 +6,7 @@ require "digest"
 require "rest-client"
 require "fileutils"
 require_relative "login"
+require_relative "downloads"
 require_relative "hooks"
 
 Capybara.configure do |config|

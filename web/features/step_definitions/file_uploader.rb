@@ -1,7 +1,7 @@
-Quando("eu selecionar o arquivo {string} para upload") do |file_name|
-  file_path = File.expand_path("~/Downloads/#{file_name}", __FILE__)
+Quando("eu selecionar um arquivo para upload") do
+  file_path = File.expand_path("~/Downloads/#{ARQUIVO_1}", __FILE__)
 
-  attach_file("file", file_path)
+  attach_file("file", ARQUIVO_1)
 end
 
 Entao("devo ver a mensagem {string} na pagina") do |message|

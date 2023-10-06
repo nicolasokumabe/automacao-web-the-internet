@@ -4,7 +4,7 @@ Funcionalidade: Realizar upload de arquivo
 
   Cenario: Fazer upload de um arquivo
     Dado que acesso a pagina "http://the-internet.herokuapp.com/upload"
-    Quando eu selecionar o arquivo "aaaa.png" para upload
+    Quando eu selecionar um arquivo para upload
     E eu clico no botao "Upload"
     Entao devo ver a mensagem "File Uploaded!" na pagina
 
