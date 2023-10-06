@@ -1,18 +1,24 @@
 Dado("que eu acesso a pasta Downloads") do
+  @arquivos_para_excluir = ["#{ARQUIVO_1}", "#{ARQUIVO_2}"]
+
   @downloads_directory = File.expand_path("~/Downloads")
 end
 
-Quando("eu deleto o arquivo") do
-  expect(File).to exist(File.join(@downloads_directory, "aaaa.png"))
-
+Quando("deleto os arquivos desejados") do
   # Deletando o arquivo baixado para nao poluir meu PC
 
-  file1_to_delete = File.expand_path(File.join(@downloads_directory, "aaaa.png"))
+  @arquivos_para_excluir.each do |nome_arquivo|
+    expect(File).to exist(File.join(@downloads_directory, nome_arquivo))
+    @arquivo_para_excluir = File.expand_path(File.join(downloads_directory, nome_arquivo))
 
-  File.delete(file1_to_delete)
+    File.delete(@arquivo_para_excluir)
+  end
 end
 
-Entao("o arquivo nao deve mais estar na pasta") do
+Entao("os arquivos nao devem estar na pasta") do
   # Verifico se o arquivo nao existe na pasta de downloads
-  expect(File).not_to exist(File.join(@downloads_directory, "aaaa.png"))
+
+  @arquivos_para_excluir.each do |nome_arquivo|
+    expect(File).not_to exist(File.join(@downloads_directory, nome_arquivo))
+  end
 end
