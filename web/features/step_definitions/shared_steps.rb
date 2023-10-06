@@ -25,11 +25,24 @@ Entao("devo ver o texto {string}") do |texto|
 end
 
 Quando("clico no link de download do arquivo") do
-  click_link "aaaa.png"
+  click_link "#{ARQUIVO_1}"
 end
 
 Entao("o arquivo deve ser baixado com sucesso") do
   # Nada a ser verificado aqui, ja que o Chrome estah configurado para download automatico
+end
+
+Entao("devo aguardar o carregamento completo do site {string} na rota {string}") do |site, rota|
+  Capybara.default_max_wait_time = 2
+  current_url = page.current_url
+  expect(current_url).to eq("http://the-internet.herokuapp.com#{site}#{rota}")
+end
+
+Entao("devo ser redirecionado para a pagina Sobre") do
+  expected_url = "http://the-internet.herokuapp.com/about/"
+  expect(page).to have_current_path(expected_url)
+
+  expect(page).to have_css("h1", text: "Not Found")
 end
 
 Quando("informo minhas credenciais validas") do
