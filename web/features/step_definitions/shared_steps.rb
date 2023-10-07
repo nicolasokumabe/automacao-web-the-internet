@@ -35,7 +35,7 @@ end
 Entao("devo aguardar o carregamento completo do site {string} na rota {string}") do |site, rota|
   Capybara.default_max_wait_time = 2
   current_url = page.current_url
-  expect(current_url).to eq("http://the-internet.herokuapp.com#{site}#{rota}")
+  expect(current_url).to eq("http://the-internet.herokuapp.com/#{site}#{rota}")
 end
 
 Entao("devo ser redirecionado para a pagina Sobre") do
