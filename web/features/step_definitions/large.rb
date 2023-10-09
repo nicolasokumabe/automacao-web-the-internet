@@ -1,4 +1,4 @@
-Então("devo verificar se um elemento com id {string} existe no DOM") do |element_id|
+Entao("devo verificar se um elemento com id {string} existe no DOM") do |element_id|
   page.execute_script("window.scrollBy(0, 10000)")
   page.execute_script("window.scrollBy(10000, 0)")
 
