@@ -28,6 +28,6 @@ Quando("devo verificar o conteudo do frame inferior") do
   end
 end
 
-Então("devo ver o texto do frame {string}") do |expected_text|
+Entao("devo ver o texto do frame {string}") do |expected_text|
   expect(@frame_content).to include(expected_text)
 end
