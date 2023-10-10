@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "allure-cucumber", "2.23"
 gem "cucumber", "9.0"
 gem "capybara", "3.39"
 gem "selenium-webdriver", "4.12"
