@@ -3,7 +3,3 @@ Quando("eu selecionar um arquivo para upload") do
 
   attach_file("file", ARQUIVO_1)
 end
-
-Entao("devo ver a mensagem {string} na pagina") do |message|
-  expect(page).to have_content(message)
-end
