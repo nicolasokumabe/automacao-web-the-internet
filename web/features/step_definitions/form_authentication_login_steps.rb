@@ -8,7 +8,7 @@ end
 
 Entao("devo ser redirecionado para a pagina de sucesso") do
   current_url = page.current_url
-  expect(current_url).to eq("/secure")
+  expect(current_url).to eq("#{APPHOST}/secure")
   #   expect(page).to have_current_path("/secure")
 
   expect(page).to have_css("h2", text: "Secure Area")
@@ -25,6 +25,6 @@ end
 
 Entao("volto para a area de login") do
   current_url = page.current_url
-  expect(current_url).to eq("/login")
+  expect(current_url).to eq("#{APPHOST}/login")
   #   expect(page).to have_current_path("/login")
 end

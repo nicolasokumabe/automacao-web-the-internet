@@ -34,7 +34,12 @@ end
 
 Entao("devo aguardar o carregamento completo do site {string} na rota {string}") do |site, rota|
   current_url = page.current_url
-  expect(current_url).to eq("/#{site}#{rota}")
+  expect(current_url).to eq("#{APPHOST}/#{site}#{rota}")
+
+  # Entao("devo ser redirecionado para a pagina {string}") do |expected_url|
+  #   expect(current_url).to eq(expected_url)
+  # end
+
 end
 
 Entao("devo ser redirecionado para a pagina Sobre") do

@@ -10,11 +10,12 @@ require "language_tool"
 require_relative "login"
 require_relative "downloads"
 require_relative "hooks"
+require_relative "apphost"
 
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
-  config.app_host = "http://the-internet.herokuapp.com"
-  config.default_max_wait_time = 10
+  config.app_host = "#{APPHOST}"
+  config.default_max_wait_time = 5
 end
 
 AllureCucumber.configure do |config|
