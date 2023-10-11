@@ -1,20 +1,5 @@
-Quando("eu entro no iframe") do
-  current_url = page.current_url
-  expect(current_url).to eq("/nested_frames")
-end
-
 Entao("o campo de texto deve conter iFrames nao renderizados") do
   expect(page).to have_css("noframes", text: "Frames are not rendering.", visible: false)
-end
-
-Quando("eu entro no frame simples") do
-  current_url = page.current_url
-  expect(current_url).to eq("/iframe")
-
-  # within_frame(:xpath, "//iframe[@id='mce_0_ifr']") do
-  #   expect(page).to have_content("Frames are not rendering.")
-  # end
-
 end
 
 Quando("eu digito {string} no campo de texto do frame simples") do |texto|

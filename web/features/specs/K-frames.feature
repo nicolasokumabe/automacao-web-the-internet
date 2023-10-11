@@ -1,21 +1,21 @@
 #language: pt
-
 @iframe
+
 Funcionalidade: Manipular Frames
 
 @iframe1
   Cenario: Entrar em um iframe e interagir com seu conteudo
     Dado que acesso a pagina "/frames"
     Quando clico no link "Nested Frames"
-    E eu entro no iframe
-    Entao o campo de texto deve conter iFrames nao renderizados
+    Entao devo aguardar o carregamento completo do site "nested_frames" na rota ""
+      E o campo de texto deve conter iFrames nao renderizados
 
 @iframe2
   Cenario: Entrar em um frame simples e interagir com seu conteudo
     Dado que acesso a pagina "/frames"
     Quando clico no link "iFrame"
-    E eu entro no frame simples
-    E eu digito "Em Busca do Primeiro Emprego" no campo de texto do frame simples
+    Entao devo aguardar o carregamento completo do site "iframe" na rota ""
+    Quando eu digito "Em Busca do Primeiro Emprego" no campo de texto do frame simples
     Entao o campo de texto do frame simples deve conter "Em Busca do Primeiro Emprego"
     
 @iframe3

@@ -3,9 +3,9 @@ Quando("eu rolar a pagina para baixo") do
 
   expect(page).to have_css("h3", text: "Infinite Scroll")
   3.times do
-    sleep 1
     page.execute_script("window.scrollBy(0, 10000)")
     @element_count = @element_count + 1
+    sleep 0.3
   end
 
   # @element_count = page.all(".jscroll-added").count
