@@ -1,6 +1,6 @@
 #language: pt
-
 @iframe
+
 Funcionalidade: Manipular Frames
 
 @iframe1
@@ -8,7 +8,7 @@ Funcionalidade: Manipular Frames
     Dado que acesso a pagina "/frames"
     Quando clico no link "Nested Frames"
     Entao devo aguardar o carregamento completo do site "nested_frames" na rota ""
-    E o campo de texto deve conter iFrames nao renderizados
+      E o campo de texto deve conter iFrames nao renderizados
 
 @iframe2
   Cenario: Entrar em um frame simples e interagir com seu conteudo

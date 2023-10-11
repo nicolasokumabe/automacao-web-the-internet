@@ -35,17 +35,17 @@ Funcionalidade: Validação da pagina "Challenging DOM"
   Cenario: Verificar botao azul
     Dado que acesso a pagina "/challenging_dom"
     Quando eu visualizo o botao azul
-    E aperto o botao azul
+      E aperto o botao azul
     Entao o id do botao azul deve mudar
 
   Cenario: Verificar botao vermelho
     Dado que acesso a pagina "/challenging_dom"
     Quando eu visualizo o botao vermelho
-    E aperto o botao vermelho
+      E aperto o botao vermelho
     Entao o id do botao vermelho deve mudar
 
   Cenario: Verificar botao verde
     Dado que acesso a pagina "/challenging_dom"
     Quando eu visualizo o botao verde
-    E aperto o botao verde
+      E aperto o botao verde
     Entao o id do botao verde deve mudar
