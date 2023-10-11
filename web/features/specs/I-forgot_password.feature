@@ -6,4 +6,4 @@ Funcionalidade: Recuperação de Senha
     Dado que acesso a pagina "/forgot_password"
     Quando eu insiro meu e-mail valido
     E eu clico no botao "Retrieve password"
-    Entao devo ver a mensagem "Internal Server Error"
+    Entao devo ver o texto "Internal Server Error"

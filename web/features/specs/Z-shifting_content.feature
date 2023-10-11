@@ -31,25 +31,25 @@ Funcionalidade: Verificar Mudança de Conteudo
     Dado que acesso a pagina "/shifting_content"
     Quando clico no link "Example 1: Menu Element"
     E clico no link "About"
-    Entao devo ver a mensagem "Not Found"
+    Entao devo ver o texto "Not Found"
   
   Cenario: Testar o site Menu Element botao Contact Us
     Dado que acesso a pagina "/shifting_content"
     Quando clico no link "Example 1: Menu Element"
     E clico no link "Contact Us"
-    Entao devo ver a mensagem "Not Found"
+    Entao devo ver o texto "Not Found"
   
   Cenario: Testar o site Menu Element botao Portfolio
     Dado que acesso a pagina "/shifting_content"
     Quando clico no link "Example 1: Menu Element"
     E clico no link "Portfolio"
-    Entao devo ver a mensagem "Not Found"
+    Entao devo ver o texto "Not Found"
   
   Cenario: Testar o site Menu Element botao Gallery
     Dado que acesso a pagina "/shifting_content"
     Quando clico no link "Example 1: Menu Element"
     E clico no link "Gallery"
-    Entao devo ver a mensagem "Not Found"
+    Entao devo ver o texto "Not Found"
 
   Cenario: Testar o site An image de pixels aleatorios
     Dado que acesso a pagina "/shifting_content"

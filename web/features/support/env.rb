@@ -10,11 +10,12 @@ require "language_tool"
 require_relative "login"
 require_relative "downloads"
 require_relative "hooks"
-require_relative "apphost"
+
+CONFIG = YAML.load_file(File.join(Dir.pwd, "features/support/config/#{ENV["CONFIG"]}"))
 
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
-  config.app_host = "#{APPHOST}"
+  config.app_host = CONFIG["url"]
   config.default_max_wait_time = 5
 end
 

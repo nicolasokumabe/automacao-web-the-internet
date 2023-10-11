@@ -11,11 +11,6 @@ Quando("clico no link {string}") do |link|
   click_link(link)
 end
 
-Entao("devo ver a mensagem {string}") do |mensagem|
-  expect(page).to have_content(mensagem)
-  # expect(page).to have_content mensagem
-end
-
 Entao("devo ver o texto {string}") do |texto|
   expect(page).to have_content(texto)
 
@@ -34,7 +29,7 @@ end
 
 Entao("devo aguardar o carregamento completo do site {string} na rota {string}") do |site, rota|
   current_url = page.current_url
-  expect(current_url).to eq("#{APPHOST}/#{site}#{rota}")
+  expect(current_url).to eq("#{CONFIG["url"]}/#{site}#{rota}")
 
   # Entao("devo ser redirecionado para a pagina {string}") do |expected_url|
   #   expect(current_url).to eq(expected_url)
