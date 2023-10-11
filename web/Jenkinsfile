@@ -8,13 +8,29 @@ pipeline {
     stages {
         stage('Prep') {
             steps {
-               sh 'bundle install'
+               sh 'cd web && bundle install'
             }
         }
         stage('Testing') {
             steps {
-                sh 'cucumber'
+                sh 'cd web && cucumber'
             }
+        }
+        stage('UAT') {
+            steps {
+                echo 'Aguardando testes de aceitação.'
+                input message: 'Podemos ir à produção?'
+            }
+        }
+        stage('Prod') {
+            steps {
+                echo 'Web pronto para produção :)'
+            }
+        }
+    }
+    post {
+        always {
+            junit 'web/logs/'
         }
     }
 }
