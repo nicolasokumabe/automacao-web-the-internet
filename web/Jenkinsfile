@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
-                sh 'cd web && cucumber'
+                sh 'cd web && cucumber -p jenkins'
             }
         }
         stage('UAT') {
@@ -24,13 +24,13 @@ pipeline {
         }
         stage('Prod') {
             steps {
-                echo 'Web pronto para produção :)'
+                echo 'WebApp pronto para produção :)'
             }
         }
     }
     post {
         always {
-            junit 'web/logs/'
+            echo 'todo'
         }
     }
 }
